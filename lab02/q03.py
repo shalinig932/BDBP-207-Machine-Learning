@@ -11,8 +11,9 @@ def load_data():
     y = california_housing.target
     return X, y
 
+
 def split_data(X, y):
-    return train_test_split(X, y, test_size=0.3, random_state=99)
+     return train_test_split(X, y, test_size=0.3, random_state=99)
 
 def scale_data(X_train, X_test):
     scaler = StandardScaler()
