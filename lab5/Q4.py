@@ -12,7 +12,7 @@ def load_data():
  df = pd.read_csv('/home/ibab/Machine_learning/SGML1/ML-lab1/lab5/breast_cancer_dataset.csv')
  df = df.dropna() # Remove rows with any missing values
  x = df.drop('diagnosis', axis=1)
- y = df['diagnosis'].map({'M': 0, 'B': 1})
+ y = df['diagnosis'].map({'M': 0, 'B': 1k})
  return x, y
 
 def split_data(X, y):
